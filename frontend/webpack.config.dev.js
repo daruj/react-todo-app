@@ -1,7 +1,6 @@
 const webpack               = require('webpack');
 const WebpackNotifierPlugin = require('webpack-notifier');
 const HtmlWebpackPlugin     = require('html-webpack-plugin');
-//const ExtractTextPlugin     = require('extract-text-webpack-plugin');
 const path                  = require('path');
 
 const webpackConfig = {
