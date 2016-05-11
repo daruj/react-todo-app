@@ -2,7 +2,7 @@ React & Dedux ToDo App!
 ===================
 
 
-In this course we p.
+Let's recap all we have learned on a final ToDo App!
 
 ----------
 
