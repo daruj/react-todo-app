@@ -11,6 +11,7 @@ Step By Step
 -------------
 
  1. Install MongoDb from : https://www.mongodb.com/download-center?jmp=nav#community
+ 
 	 a) Check if MongoDb was successfuly installed.
 
  2. Install RoboMongo from : https://robomongo.org/
