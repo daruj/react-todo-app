@@ -13,6 +13,15 @@ export default (app) => {
       }
     })
   })
+  app.get('/api/todo/:id', (req, res) => {
+    ToDo.find({ '_id': req.params.id }, (error, todo) => {
+      if (error) {
+        res.status(500).send({success: false, error: error})
+      } else {
+        res.send({success: true, todo: todo})
+      }
+    })
+  })
   app.post('/api/todo', (req, res) => {
     const newTodo = new ToDo(req.body)
     newTodo.save((error, todo) => {
