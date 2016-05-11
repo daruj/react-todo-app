@@ -34,3 +34,32 @@ Step By Step
 
 		i) Open a terminal and type: cd backend
 		ii) Now run: npm install
+
+ 6. Install babel-cli globally : npm install -g babel-cli
+ 7. Now run: npm start (This will start the API server in http://localhost:3000)
+ 8. Open Postman (Download this extension if you haven't done that yet from https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop)
+ 9. Try adding 2 or 3 ToDo items:
+
+    	POST - http://localhost:3000/api/todo
+		body (raw) :
+		{
+	    	"title": "First ToDo item",
+    		"done": false //this is a flag that we will use in the future to set the item as completed
+		}
+
+ 10. Now try getting all the ToDo items you have created:
+
+    GET - http://localhost:3000/api/todo
+
+ 11. Let's remove one of them:
+
+
+    DELETE - http://localhost:3000/api/todo/<(RoboMongo)ItemID>
+
+ 12. Now let's set one of the items as completed:
+
+    	PUT - http://localhost:3000/api/todo/<(RoboMongo)ItemID>
+		body (raw) :
+		{
+    		"done": true
+		}
